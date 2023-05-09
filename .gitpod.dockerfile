@@ -1,6 +1,2 @@
-
-   
-
-FROM gitpod/workspace-full
-
+FROM gitpod/workspace-mysql
 RUN npm i learnpack -g
