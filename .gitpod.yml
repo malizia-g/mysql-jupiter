@@ -1,13 +1,14 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
+    - before: >
+          pip install mysql_kernel;
+          python -m mysql_kernel.install;
     - init: >
           gp open README.md;
           pip install -r "requirements.txt";
       command: >
           gp open README.md;
-          pip install -r "requirements.txt";
-          pip install mysql_kernel;
-          python -m mysql_kernel.install;
+          
           
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
